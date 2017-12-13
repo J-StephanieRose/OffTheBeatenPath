@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/J-StephanieRose/PittWebsite/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/J-StephanieRose/PittWebsite/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Creating your own http://www.pitt.edu/~username  page 
+ 
+Step 1. Download WinSCP (for Windows) or Fetch (for Mac) 
+            Install the program (follow the steps) 
+ 
+Step 2. Make the connection 
+           Host Name: unixs.cssd.pitt.edu 
+           Port Number: 22 
+           Username: Whatever your username is to log on to pitt.edu 
+           Password: Whatever your password is to log on to pitt.edu 
+ 
+Step 3: Create your folder 
+          For Windows: 
+                      Save your session (e.g. My AF Space) 
+                      Log in, click yes when you see the warning 
+                      Click ok for additional prompts 
+                      Double click public folder 
+                      Create a new folder and name it html 
+ 
+          For Mac:  
+                     Double click on the public folder 
+                     Select icon for new folder and name it html 
+ 
+Step 4: Create index.html file (see https://www.w3schools.com/ for coding and cool things for html) 
+             *Also, you can use GitHub or whatever editor you want. Suggestion, save the html doc locally (e.g. on your desktop) that way you can drag and drop it into the html folder 
+ 
+Step 5: Refresh your http://www.pitt.edu/~username  page and see magic! 
+ 
+Additional information and steps from actual professionals can be found here: 
+https://technology.pitt.edu/help-desk/how-to-documents/creating-your-own-web-site 
