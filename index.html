@@ -9,22 +9,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
-}
-</script>
 <style>
  
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
@@ -160,6 +144,26 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     
 
     </div>
+    
+    <!-- TRY -->
+    <button onclick="typeWriter()">Who is J. Stephanie Rose?</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'I am a second year PhD Student with the School of Computing and Information. Currently, my research is focused on automated spectrum enforcement. Recently, I have joined the Graduate and Professional Student Government (GPSG) External Affairs Committee and the Professional Development Committee where we develop and plan activities for the graduate population at the University of Pittsburgh. I am also dedicated to fostering my skills as a future educator, therefore I am working towards my second certification with Pitt CIRTL to obtain tools to implement active learning techniques within the classroom. My overall mission is to be awesome and do great things!';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+    <!-- POSSIBLY FAIL -->
 
     <div><center>
       
