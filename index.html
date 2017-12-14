@@ -9,6 +9,22 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
 <style>
  
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
@@ -232,15 +248,20 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </div>
 
   <!-- End Projects grid -->
-<div>
-<button class="accordion">Overview</button>
-  <div class="panel">
-  <p>TBD</p>
-</div>   
-</div>
+
   <!-- End Projects Section -->
   </div>
     
+   <!-- A Poor Attempt at Accordion -->
+ <div class="container">  
+
+     <button class="accordion">Overview</button>
+      <div class="panel">
+      <p>TBD</p>
+     </div>   
+</div>
+
+   <!-- END ATTEMPT -->
    
   <!-- Current Events Section -->
     <div class="w3-padding-64 w3-content w3-text-grey" id="events">
