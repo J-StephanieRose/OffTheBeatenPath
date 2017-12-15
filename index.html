@@ -22,8 +22,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
  
 .accordion {
-    background-color: #4d7bb0;
-    color: #f0f5fb;
+    background-color: #092551;
+    color: #092551;
     cursor: pointer;
     padding: 10px;
     width: 100%;
@@ -39,7 +39,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 }
 
 .panel {
-    padding: 0 24px;
+    padding: 8 24px;
     display: none;
     background-color: black;
     color: #eee;
@@ -115,27 +115,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     
 
     </div>
-    
-    <!-- TRY -->
-<button onclick="typeWriter()">Who is J. Stephanie Rose?</button>
- <buttton style="width:200px" class="w3-opacity">
-
-<p id="demo"></p>
-
-<script>
-var i = 0;
-var txt = 'I am a second year PhD Student with the School of Computing and Information. Currently, my research is focused on automated spectrum enforcement. Recently, I have joined the Graduate and Professional Student Government (GPSG) External Affairs Committee and the Professional Development Committee where we develop and plan activities for the graduate population at the University of Pittsburgh. I am also dedicated to fostering my skills as a future educator, therefore I am working towards my second certification with Pitt CIRTL to obtain tools to implement active learning techniques within the classroom. My overall mission is to be awesome and do great things!';
-var speed = 50;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-</script>
-    <!-- POSSIBLY FAIL -->
+   
 
     <div><center>
       
@@ -194,57 +174,13 @@ function typeWriter() {
 
   <!-- End Projects Section -->
   </div>
-   
- <div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-        Collapsible Group 1</a>
-      </h4>
-    </div>
-    <div id="collapse1" class="panel-collapse collapse in">
-      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.</div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-        Collapsible Group 2</a>
-      </h4>
-    </div>
-    <div id="collapse2" class="panel-collapse collapse">
-      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.</div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-        Collapsible Group 3</a>
-      </h4>
-    </div>
-    <div id="collapse3" class="panel-collapse collapse">
-      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.</div>
-    </div>
-  </div>
     
 <!-- TRY ACCORDION -->
  <h4>More About This Project</h4>
 <div>
 <button class="accordion">Overview</button>
   <div class="panel">
-    <p>The United States is experiencing spectrum scarcity, or so most research and initiatives would have the community believe. This argument has been the premise for several initiatives on how to best utilize and allocate radio spectrum. However, with the advent of the Internet of Things and 5G services, it has become important to take a look at the governing policy and regulatory efforts in order to develop measures on how to deal with enforcement – specifically automated enforcement- for spectrum interference. My research for this project investigates the enforcement of commercial spectrum and how the Federal Communication's Enforcement Bureau adjudicates interference issues within radio frequency bands. My hypothesis is that radio spectrum interference is an important and serious issue that needs to be alleviated before emerging technologies enter the current spectrum environment. Moreover, it is possible that there is an enforcement disparity in which "would be offenders" are not necessarily dissuaded from interfering with radio spectrum. Through my research, I hope to gain a better understanding of the enforcement measures and process in order to develop an automated enforcement structure that would best encapsulate policy/ regulator needs and requirements for fair and consistent enforcement of radio spectrum.</p>
+    <justify><p>The United States is experiencing spectrum scarcity, or so most research and initiatives would have the community believe. This argument has been the premise for several initiatives on how to best utilize and allocate radio spectrum. However, with the advent of the Internet of Things and 5G services, it has become important to take a look at the governing policy and regulatory efforts in order to develop measures on how to deal with enforcement – specifically automated enforcement- for spectrum interference. My research for this project investigates the enforcement of commercial spectrum and how the Federal Communication's Enforcement Bureau adjudicates interference issues within radio frequency bands. My hypothesis is that radio spectrum interference is an important and serious issue that needs to be alleviated before emerging technologies enter the current spectrum environment. Moreover, it is possible that there is an enforcement disparity in which "would be offenders" are not necessarily dissuaded from interfering with radio spectrum. Through my research, I hope to gain a better understanding of the enforcement measures and process in order to develop an automated enforcement structure that would best encapsulate policy/ regulator needs and requirements for fair and consistent enforcement of radio spectrum.</p></justify>
   </div>
  </div>
 
@@ -313,7 +249,52 @@ for (i = 0; i < acc.length; i++) {
     <hr style="width:200px" class="w3-opacity">
         <a href="https://pitt-my.sharepoint.com/personal/jsr67_pitt_edu/_layouts/15/guestaccess.aspx?docid=15173aed3ddef4b528b8679149e5f3d06&authkey=Aa0MY-cYoPcllFWSWmPGM4o">Upping the IoT Ante -WiP</a>
         <!-- Communication Efficiencies: Utilizing Electromagnetic Spectrum for Wireless Broadband Services -->
-     <!-- End Publication Section -->
+     
+   
+<div class="container">
+  <h2>Accordion Example</h2>
+  <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+  </div> 
+</div>
+    
+   <!-- End Publication Section -->
   
         
   <!-- Contact Section -->
@@ -347,6 +328,27 @@ for (i = 0; i < acc.length; i++) {
             <div class="col-lg-12">
                 <p><font color="white">Copyright &copy; JSR67 2017</font></p>
             </div>
+          
+              <!-- TRY -->
+<button onclick="typeWriter()"><center><font color="black">Who is J. Stephanie Rose?</font></center></button>
+
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = ' This page is very pretty much under constant construction. Apologies for any extra weirdness ';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+    <!-- POSSIBLY FAIL -->
         </div>
     </footer>
 
