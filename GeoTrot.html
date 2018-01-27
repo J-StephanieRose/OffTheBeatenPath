@@ -114,9 +114,74 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <hr style="width:200px" class="w3-opacity">
     <p> TBD </p>
    
-   <a href="geotrotapp.html">GeoTrot Mobile App </a>
+   <div>
     
+    <p><a href="geotrotapp.html">GeoTro Mobile App</a></p>
+        <img src="https://pitt-my.sharepoint.com/:i:/g/personal/jsr67_pitt_edu/Eam-oX8Zy6tAmNfLldecr0sBhLGj-HdxbkxSut-0wHc5YQ?e=iqFvfb" class="img-square" height="200" width="200" alt="GeoTrot App">
+   </div>
+    
+<h4>More About This Project</h4>
+<justify>
+<div>
+<button class="accordion">Overview</button>
+  <div class="panel">
+   <p>SECTION I</p>
+   <p>TBD</p>
+ </div>
 
+
+<button class="accordion">SECTION II</button>
+  <div class="panel">
+    <p>TBD:
+      <ol>
+        <li>TBD I</li>
+        <li>TBD II</li>
+        <li>TBD III</li>
+      </ol>
+  </div>
+
+<button class="accordion">SECTION III</button>
+  <div class="panel">
+   <p>TBD</p>
+  </div>
+
+<button class="accordion">SECTION IV</button>
+  <div class="panel">
+    <p>TBD</p>
+
+</div>
+
+<button class="accordion">SECTION V</button>
+  <div class="panel">
+   <p>TBD </p>
+  </div>
+
+<button class="accordion">SECTION VI</button>
+  <div class="panel">
+   <p>TBD</p>
+  </div>
+
+<button class="accordion">SECTION VII</button>
+  <div class="panel">
+   <p>TBD</p>
+  </div>
+ </justify>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
     </div>
     
       <!-- Contact Section -->
