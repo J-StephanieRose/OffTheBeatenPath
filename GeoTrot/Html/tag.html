@@ -1,0 +1,104 @@
+<title>Welcome to GeoTrot</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style> 
+  
+body, h1 {font-family: "Montserrat", sans-serif}
+ img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+ 
+.accordion {
+    background-color: #092551;
+    color: #ccc;
+    cursor: pointer;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width: 100%;
+    border: none;
+    text-align: justify;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
+    background-color: #ccc;
+    color: #092551;
+}
+.panel {
+    padding: 8 24px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: none;
+    background-color: black;
+    color: #eee;
+    text-align: justify;
+    text-indent: 50px;
+}
+</style>
+<body class="w3-black">
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About the Makers</a>
+    <a href="profile.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Profile</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Tag Shot</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Modify Tag</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Offline Trot</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Push to the Mothership</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Report an Error</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Sign Out</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>GeoTrot</b></h1>
+
+</header>
+</div>
+
+<div>
+<center>
+<div>
+<p>Shot any cool tags recently?</p>
+</div>
+
+<div>
+
+<button onclick="myFunction()">Upload Here</button>
+
+</div>
+</center>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.createElement("INPUT");
+    x.setAttribute("type", "file");
+    document.body.appendChild(x);
+}
+</script>
+</center>
+</body>
+</html>
