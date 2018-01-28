@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.infsci2560.repositories;
+package geotrot.repositories;
 
-import edu.infsci2560.models.tag;
+import geotrot.models.tag;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 /**
