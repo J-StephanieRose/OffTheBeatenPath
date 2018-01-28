@@ -22,33 +22,32 @@ public class Tag {
     private static final long serialVersionUID = 1L;
 
     public enum TagType {
-        TagModified,
-        Strength,
-        Cardio,
-        CrossTrain
+        Modified,
+        Unmodified,
+        Offline
     }
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     protected Long id;
     protected String title;
-    protected WorkoutType workoutType;
+    protected TagType tagType;
 
-    public Dvd() {
+    public Tag() {
         this.id = Long.MAX_VALUE;
         this.title = null;
-        this.workoutType = WorkoutType.Unknown;
+        this.tagType = TagType.Modified;
     }
 
-    public Dvd(Long id, String name, WorkoutType workoutType) {
+    public Tag(Long id, String name, TagType tagType) {
         this.id = id;
         this.title = name;
-        this.workoutType = workoutType;
+        this.tagType = tagType;
     }
 
     @Override
     public String toString() {
-        return "[ id=" + this.id + ", title=" + this.title + ", workoutType=" + this.workoutType + " ]";
+        return "[ id=" + this.id + ", title=" + this.title + ", tagType=" + this.tagType + " ]";
     }
 
     @Override
@@ -76,17 +75,17 @@ public class Tag {
     }
 
     /**
-     * @return the workoutType
+     * @return the tagType
      */
-    public WorkoutType getWorkoutType() {
-        return workoutType;
+    public TagType getTagType() {
+        return tagType;
     }
 
     /**
-     * @param workoutType the workoutType to set
+     * @param tagType the tagType to set
      */
-    public void setWorkoutType(WorkoutType workoutType) {
-        this.workoutType = workoutType;
+    public void setTagType(TagType tagType) {
+        this.tagType = tagType;
     }
 
     /**
