@@ -149,12 +149,14 @@ input {
 
 
 <body>
+  <!--error response
    <div data-th-if="${param.error}">
             Invalid username and password.
         </div>
         <div data-th-if="${param.logout}">
             You have been logged out.
         </div>
+  -->
 
 <div id="back">
   <div class="backRight"></div>
@@ -192,13 +194,16 @@ input {
         <form method="post" onsubmit="return false;">
           <div class="form-group">
             <label for="username" class="form-label">Username</label>
-            <label for="username" class="form-label">Password</label>
+            <input type="text" />
+          </div>
+           <div class="form-group">
+            <label for="password" class="form-label">Password</label>
             <input type="text" />
           </div>
           <button id="goRight" class="off">Sign Up</button>
           <button id="login" type="submit">Login</button>
 <p>
-          <div class="container"  <span class="psw"><a href="#">Forgot password?</a></span>
+          
   </div> </a></span>
   </div>
         </form>
@@ -206,6 +211,10 @@ input {
     </div>
   </div>
 </div>
+
+<footer>
+  <div class="container"  <span class="psw"><a href="#">Forgot password?</a></span>
+</footer>
 
 <!--Inspiration from: http://ertekinn.com/loginsignup/-->
 
