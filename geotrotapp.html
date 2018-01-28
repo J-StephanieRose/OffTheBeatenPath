@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
- <head>
-<title>GeoTrot</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<style>
- 
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+<style> 
+  
+body, h1 {font-family: "Montserrat", sans-serif}
+ img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #222;}
@@ -50,86 +47,101 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     text-align: justify;
     text-indent: 50px;
 }
-
-
 </style>
-</header>
-
-<!--start body -->
 <body>
-<body style="max-width:600px">
 
-<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
-<div class="w3-container w3-theme-d2">
-  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
-  <br>
-
-  <div class="w3-padding w3-center">
-        <p><a href="#">My Profile</a></p>
-        <img src="https://pitt-my.sharepoint.com/:i:/g/personal/jsr67_pitt_edu/EUU9j-D3igNCirwTjL67Xx4BvREwLRucoaq6w_KFaqMLng?e=Ut3HtH" class="img-square" height="160" width="160" alt="An image">
- 
-<a class="w3-bar-item w3-button" href="#">Profile Settings</a>
-<a class="w3-bar-item w3-button" href="#">TagShot</a>
-<a class="w3-bar-item w3-button" href="#">Modify TagShot</a>
-<a class="w3-bar-item w3-button" href="#">Trot Offline</a>
-<a class="w3-bar-item w3-button" href="#">Push-a-Tag</a>
-<a class="w3-bar-item w3-button" href="#">Locations</a>
-<a class="w3-bar-item w3-button" href="#">GeoPeerReview</a>
-<a class="w3-bar-item w3-button" href="#">Report an Eror</a>
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+  </div>
 </nav>
-<header class="w3-bar w3-card w3-theme">
-  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
-  <h1 class="w3-bar-item">GeoTrot</h1>
 
-</div>
-</div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
 
-<div class="w3-container">
-<hr>
-<div class="w3-cell-row">
-  <div class="w3-cell" style="width:30%">
-    <img class="w3-circle" src="img_avatar.jpg" style="width:100%">
-  </div>
-  <div class="w3-cell w3-container">
-    <h3>Frozen</h3>
-    <p>The response to the animations was ridiculous.</p>
-  </div>
-</div>  
-<hr>
-<div class="w3-cell-row">
-  <div class="w3-cell" style="width:30%">
-    <img class="w3-circle" src="img_avatar.jpg" style="width:100%">
-  </div>
-  <div class="w3-cell w3-container">
-    <h3>The Fault in Our Stars</h3>
-    <p>Touching, gripping and genuinely well made.</p>
-  </div>
-</div>
-<hr>
-<div class="w3-cell-row">
-  <div class="w3-cell" style="width:30%">
-    <img class="w3-circle" src="img_avatar.jpg" style="width:100%">
-  </div>
-  <div class="w3-cell w3-container">
-    <h3>The Avengers</h3>
-    <p>A huge success for Marvel and Disney.</p>
-  </div>
-</div>
-<hr>
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>PHOTOLIO</b></h1>
+  <p><b>A template made by w3.css for photographers.</b></p>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+</header>
 </div>
 
-<footer class="w3-container w3-theme w3-margin-top">
-  <h3>Footer</h3>
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/sound.jpg" style="width:100%">
+    <img src="/w3images/woods.jpg" style="width:100%">
+    <img src="/w3images/rock.jpg" style="width:100%">
+    <img src="/w3images/nature.jpg" style="width:100%">
+    <img src="/w3images/mist.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="/w3images/coffee.jpg" style="width:100%">
+    <img src="/w3images/bridge.jpg" style="width:100%">
+    <img src="/w3images/notebook.jpg" style="width:100%">
+    <img src="/w3images/london.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/avatar_g.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/workbench.jpg" style="width:100%">
+    <img src="/w3images/gondol.jpg" style="width:100%">
+    <img src="/w3images/skies.jpg" style="width:100%">
+    <img src="/w3images/lights.jpg" style="width:100%">
+    <img src="/w3images/workshop.jpg" style="width:100%">
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
-
+ 
 <script>
-closeSidebar();
-function openSidebar() {
+// Toggle grid padding
+function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className === "w3-row") {
+        x.className = "w3-row-padding";
+    } else { 
+        x.className = x.className.replace("w3-row-padding", "w3-row");
+    }
+}
+
+// Open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
     document.getElementById("mySidebar").style.display = "block";
 }
-function closeSidebar() {
+
+function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
 </script>
 
 </body>
+</html>
