@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.infsci2560.models;
+package GeoTrot.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
