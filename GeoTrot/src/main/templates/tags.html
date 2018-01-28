@@ -90,37 +90,11 @@ body, h1 {font-family: "Montserrat", sans-serif}
 
         <div>
    
-             
-                <tr data-th-each="tag : ${tags}">
-                    <td data-th-text="${tag.id}"></td>
-                    <td data-th-text="${tag.title}"></td>
-                    <td data-th-text="${tag.tagType}"></td>
-                </tr>
-
-        </div>
-     
-        <form data-th-action="@{/tags/add}" name="addTagForm" method="post">
-        <button onclick="myFunction()">Upload Here</button>
-
-<script>
-function myFunction() {
-    var x = document.createElement("INPUT");
-    x.setAttribute("type", "file");
-    document.body.appendChild(x);
-}
-</script>
-
-   <div class="w3-container w3-padding-64">
-        
-            Tag Type:<br />
-            <input type="radio" name="tagType" value="Unmodified" checked="checked" /> Unmodified<br />
-            <input type="radio" name="tagType" value="Modified" />Modified<br />
-            <input type="radio" name="tagType" value="Offline" /> Offline<br />
-     </div>
-            <input type="submit" value="Add Tag"/>
-        </form>
-        
-        <hr />       
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+<input type="file" name="fileToUpload" id="fileToUpload">
+<input type="submit" value="Upload Image" name="submit">
+</form>
+        </div>      
      </center>
     <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
