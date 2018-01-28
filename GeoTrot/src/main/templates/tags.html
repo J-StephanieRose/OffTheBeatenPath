@@ -7,7 +7,9 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
   app.use(express.bodyParser({uploadDir:'/path/to/temporary/directory/to/store/uploaded/files'}));
+  </script>
 <style> 
   
 body, h1 {font-family: "Montserrat", sans-serif}
@@ -117,10 +119,8 @@ app.post('/uploads', function (req, res) {
     // ...
 });
   </div>
-        <div>
-          <img src="/image.png" />
-        </div>
-        <div>
+   
+        <axe>
           app.get('/image.png', function (req, res) {
     res.sendfile(path.resolve('./uploads/image.png'));
 }); 
